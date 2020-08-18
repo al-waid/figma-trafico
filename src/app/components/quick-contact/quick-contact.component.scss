@@ -1,0 +1,33 @@
+@import '../../../assets/scss/utils/mixins';
+
+
+.contact-card{
+    margin: auto;
+    width: 94%;
+    @include med-screen{
+        width: 75%;
+        
+    }
+}
+.form{
+    
+    @include med-screen{
+        padding: 2.4rem;
+    }
+    .form-fields-group{
+        .field-block-label{
+            margin-top: .5rem;
+        }
+
+        .form-field{
+            border-color: #FEF8F5;
+            margin: 1.1rem 0;
+            padding: 1rem 1.8rem;
+            border-radius: .3rem;
+            &:focus{
+                border-color: #EE4D47;
+                @include box-shadow(.6rem, #EE4D47)
+            }
+        }
+    }
+}

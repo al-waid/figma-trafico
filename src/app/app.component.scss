@@ -1,0 +1,162 @@
+@import "../assets/scss/utils/_mixins.scss";
+@import "../assets/scss/utils/_variables.scss";
+.homepage{
+    background: url('../assets/images/Sceneside.png') left top no-repeat;
+   // background-size: 100%;
+    @include mobile-only{
+        background-size: 100%;
+    }
+}
+.app-top{
+    .header{
+    }
+
+    .hero-banner{
+        .container{
+            padding: 2.5rem 0 1.8rem 2.7rem;
+            overflow: hidden;
+            @include mobile-only{
+                padding: 0;
+            }
+        }
+        h1{
+            font-family: DM Serif Display;
+            font-size: 7.7rem;
+            line-height: .95;
+            color: #fff;
+
+            @include mobile-only{
+                font-size: 2.7rem;
+            }
+        }
+
+        .btn{
+
+        }
+        .top-car{
+            padding-top: 12rem;
+            overflow: hidden;
+            img{
+                position: relative;
+                left: -14rem;
+                &:hover{
+                    animation: move-car 3s 3s both;
+                }
+            }
+        }
+        padding-bottom: 1rem;
+    }
+}
+
+.about-us{
+    padding-left: 4rem;
+    &__txt{
+        h4{
+
+        }
+        p{
+            padding: 1.4rem 10rem 2.5rem 0;
+            @include mobile-only{
+                padding: .5rem 1rem;            
+            }
+        }
+        blockquote{
+            font-size: 1.8rem;
+        }
+        
+    }
+    &__img{
+
+        img{
+            
+        }
+    }
+}
+
+.apply{
+    
+    &__txt{
+        padding-left: 5rem;
+        padding-top: 10rem;
+        padding-right: 3rem;
+        @include mobile-only{
+            padding: .5rem 1rem;            
+        }
+        h4{
+
+        }
+        p{
+            padding-top: 2rem;
+            @include mobile-only{
+                padding-top: 0;            
+            }
+        }
+    }
+    &__img{
+
+        img{
+
+        }
+    }
+}
+
+.clients{
+    &__container{
+        margin-left: 12rem;  
+        @include medium-screen {
+            margin-left: 1.2rem;
+        }      
+    }
+
+    &__us{
+        p{
+            font-size: 3.8rem;
+            color: #000;
+            line-height: 1.2;
+        }
+    }
+
+    .swiper-container{
+        padding-top: 3rem !important;
+
+        .swiper-button-prev{
+            margin-left: auto;
+        }
+        .swiper-button-next{
+            margin-right: 10rem;
+            @include medium-screen {
+                margin-right: 1.2rem;
+            } 
+        }
+
+        .swiper-button-prev, .swiper-button-next{
+            top: 0 !important;
+            position: initial !important;
+            color: #ED4D47;
+            font-size: 1.5rem;
+        }
+
+        .swiper-button-prev::after, .swiper-button-next::after{
+            content: "" !important;
+        }
+        .swiper-button-prev::before, .swiper-button-next::before{
+            font-size: 1rem;
+        }
+    }
+}
+
+@keyframes move-car{
+    0%{
+        left: -14rem;
+    }
+
+    20%{
+        left: 0;
+    }
+
+    100%{
+        left: 110%;
+    }
+
+
+}

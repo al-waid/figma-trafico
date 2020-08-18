@@ -1,0 +1,124 @@
+@import '../../../assets/scss/utils/mixins';
+
+.footer{
+    &-anim{
+        
+        position: relative;
+        padding-top: 14rem;
+        &-car{
+            position: absolute;
+            bottom: -3.1rem;
+            left: -4.9%;
+            img{
+                
+            }
+        }
+        &-blue-bg{
+            background: url('../../../assets/images/bg-v1.svg') no-repeat;
+            bottom: -1.3rem;
+            left: 21%;
+        }
+        &-pink-bg{
+            background: url('../../../assets/images/bg-v2.svg') no-repeat;
+            bottom: -2.9rem;
+        }
+        &-blue-bg, &-pink-bg{
+            width: 13.6rem;
+            height: 6.6rem;
+            position: absolute;
+            
+        }
+
+        @include mobile-only{
+            padding-top: 10rem;
+            &-car{
+                bottom: -2.25rem;
+                left: -12.5%;
+                img{
+                    max-width: 50%;
+                }
+            }
+            &-blue-bg{
+                bottom: -.85rem;
+                left: 36.5%;
+            }
+            &-pink-bg{
+                bottom: -1.45rem;
+            }
+            &-blue-bg, &-pink-bg{
+                width: 6.8rem;
+                height: 3.3rem;
+                background-size: contain;
+            }
+        }
+    }
+    &-top{
+        background: url('../../../assets/images/bg-footer.svg') left 0% no-repeat;
+        .ft-get-started{
+            blockquote{
+                background-color: transparent;
+                padding: 2rem 1.5rem;
+                margin: 5rem auto;
+                max-width: 65%;
+                color: #fff;
+                font-size: 1.2rem;
+                @include mobile-only{
+                    margin: 3rem auto 2rem;
+                }
+            }
+            .qc{
+                position: relative;
+                top: -7rem;
+
+                @include mobile-only{
+                    position: initial;
+                }
+            }
+        }
+
+        .footer-menu{
+            padding: 3rem 0 5rem;
+            .logo{
+                img{
+                    max-width: 8rem;
+                }
+            }
+
+            ul{
+                li{
+                    a{
+                        padding: 0 2.5rem;
+                        color: #fff;
+                        &:hover{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-copyright{
+        padding: 2rem 0;
+
+        .social-links{
+            li{
+                a{
+                    background-color: #EE4D47;
+                    border-radius: 50%;
+                    padding: 1rem .6rem .5rem .5rem;
+                    font-size: 1rem;
+                    margin: 0 0.5rem;
+                    @include mobile-only{
+                        padding: 1rem 0.7rem 0.6rem 0.6rem;
+                        font-size: 1.3rem;
+                    }
+                    i::before{
+                        margin: 0 !important;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    padding-bottom:1rem;
+}

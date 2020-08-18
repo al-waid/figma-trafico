@@ -1,0 +1,13 @@
+header{
+    .container{
+        //padding-right: 10rem;
+        .menu{
+            &__item{
+                vertical-align: middle;                    
+                .btn{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

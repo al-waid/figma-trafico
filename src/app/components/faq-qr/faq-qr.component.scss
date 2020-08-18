@@ -1,0 +1,29 @@
+.accordion{
+    .accordion-label{
+        background-color: #fff;
+        color: #000;
+        border-radius: 0.3rem;
+        padding: 1.2rem;
+        box-shadow: 0 .2rem .4rem transparentize(#111, .6);
+        vertical-align: middle;
+        &::after{
+            content: "+";
+            color: #EE4D47;
+            font-size: 2rem;
+            margin-left: 1.5rem;
+        }
+    }
+
+    .accordion-content{
+
+    }
+}
+
+input:checked {
+    + .accordion-label {
+      &::after {
+        content: "-";
+        transform: none;
+      }
+    }
+  }

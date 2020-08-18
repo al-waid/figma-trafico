@@ -1,0 +1,40 @@
+@import "../../../assets/scss/utils/_mixins.scss";
+.faq-holder{
+    background: url('../../../assets/images/faq.svg') right top no-repeat;
+    padding-bottom: 3rem;
+    @include mobile-only{
+        background-position-x: -15%;
+        background-size: cover;
+    }
+    .faq{
+        &__img{
+
+        }
+        &__txt{
+            padding-top: 10rem;
+
+            p{
+                font-size: 3.8rem;
+                color: #000;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+.faqs-qr{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-gap: 30px;
+    height: auto;
+
+    .faq-accordion{
+
+    }
+    @include mobile-only{
+        padding: 0 1.4rem;
+        grid-template-columns: repeat(1, 100%);
+    }
+}

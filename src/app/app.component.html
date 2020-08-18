@@ -1,0 +1,77 @@
+<div class="app-top homepage">
+  <app-header class="header"></app-header>
+  <div class="hero-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 col-xs-8">
+          <h1 class="mb-3">Your awesome traffic permit consultant.</h1>
+          <button class="btn">Get started</button>
+        </div>
+        <div class="col-4 col-xs-4"></div>
+      </div>      
+    </div>
+    <div class="top-car">
+      <img src="../assets/images/car.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="about-us spacer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-xs-12 about-us__txt spacer">
+        <h4>About us</h4>
+        <p>The occupational traffic permit is one of the most important things in the company when carrying out freight transport. 
+          In fact, it is a prerequisite for doing business traffic at all. </p>
+        <blockquote>How do you do when you need to obtain a commercial traffic permit for freight transport to your business?</blockquote>
+      </div>
+      <div class="col-6 col-xs-12 about-us__img">
+        <img src="../assets/images/Illustrationabout.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="apply">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-xs-12 apply__img">
+        <img src="../assets/images/illustrationsapply.png" alt="">
+      </div>
+      <div class="col-6 col-xs-12 apply__txt">
+        <h4>How to apply</h4>
+        <p>When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-faq></app-faq>
+<div class="clients spacer">
+  <div class="clients__container">
+    <div class="row">
+      <div class="col-4 col-xs-12 clients__us">
+        <h5>ABOUT US</h5>
+        <p>Out Awesome Clients</p>
+      </div>
+      <div class="col-8 col-xs-12">
+        <div class="featured-banner swiper-container" [swiper]="config">
+          <div class="slide__nav dp-flex">
+            <div class="swiper-button-prev flaticon-back"></div>
+            <div class="swiper-button-next flaticon-next"></div>
+          </div>
+          <div class="swiper-wrapper">
+           <div  class="swiper-slide"  *ngFor="let testi of testis;">
+              <app-testimonial class="testimoniales-slider-item"
+              [name]="testi.name"
+              [image]="testi.img"
+              [message]="testi.msg"></app-testimonial>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

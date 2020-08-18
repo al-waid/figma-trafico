@@ -1,0 +1,21 @@
+.testimonial{
+    padding: 1.5rem 2.5rem 1rem;
+    margin: 0.4rem;
+    &__content{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    &__author{
+        vertical-align: middle;
+        img{
+            width: 3.8rem;
+            height: 3.8rem;
+            border-radius: 50%;
+        }
+        span {
+            font-weight: bold;
+            margin-left: 1.3rem;
+            font-size: .9rem;
+        }
+    }
+}

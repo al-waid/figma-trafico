@@ -1,0 +1,27 @@
+<div class="faq-holder">
+    <div class="faq">
+        <div class="container">
+            <div class="row">            
+                <div class="col-6 col-xs-12 faq__txt">
+                    <h5>FAQ</h5>
+                    <p>Questions and Answers on Professional Traffic Permits:</p>
+                </div>
+                <div class="col-6 col-xs-12 faq__img">
+                    <img src="../../../assets/images/Group 14faq.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="faq-qr-holder">
+    <div class="container">
+        <div class="faqs-qr">
+            <app-faq-qr class="faq-accordion" *ngFor="let qr of qrs;" [id]="qr.id" [q]="qr.q" [r]="qr.r" ></app-faq-qr>
+            <div class=""></div>
+            <button class="btn btn-block btn--secondary">Load more</button>
+        </div>
+    </div>
+</div>
+
+
