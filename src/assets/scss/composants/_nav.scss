@@ -64,7 +64,7 @@
                 }
             }
             li{
-                line-height: 3rem;
+                line-height: 1.2;
 
                 &:hover{
                     > .menu__sub{
@@ -119,6 +119,7 @@
             }
             .menu{
                 display: flex;
+                padding-top: 4rem;
             }
         }
         .menu{
@@ -134,7 +135,7 @@
             display: none;
             overflow-y: scroll;
             &__item{
-                line-height: 4rem;
+                line-height: 1.2;
 
                 &:hover{
                     > .menu__sub{
@@ -152,8 +153,9 @@
 
             &__sub{
                 position: initial;
-                border: 3px solid transparent;
-                border-left-color: $color-primary;
+               // border: 3px solid transparent;
+                border-left:  3px solid $color-primary;
+                border-top: none;
                 margin-left: .8rem;
                 max-height: 0;
                 ul{
@@ -171,7 +173,7 @@
                 }
 
                 &::before{
-
+                    display: none;
                 }
             }
         }
