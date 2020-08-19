@@ -2,9 +2,14 @@
 .faq-holder{
     background: url('../../../assets/images/faq.svg') right top no-repeat;
     padding-bottom: 3rem;
+
     @include mobile-only{
         background-position-x: -15%;
         background-size: cover;
+    }
+    
+    @include land-tab{
+        background-size: 80%;
     }
     .faq{
         &__img{

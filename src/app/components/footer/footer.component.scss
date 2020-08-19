@@ -64,6 +64,8 @@
                 font-size: 1.2rem;
                 @include mobile-only{
                     margin: 3rem auto 2rem;
+                    max-width: 85%;
+                    font-size: 1.4rem;
                 }
             }
             .qc{
